@@ -1,0 +1,41 @@
+{
+  "$schema": "https://angular.io/cli/schema.json",
+  "version": 1,
+  "projects": {
+    "angular-parent-child-example": {
+      "projectType": "application",
+      "root": "",
+      "sourceRoot": "src",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/angular-parent-child-example",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "tsconfig.json",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "angular-parent-child-example:build"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "angular-parent-child-example",
+  "cli": {
+    "analytics": "56f2139f-c52e-4691-be4b-48afd29506ca"
+  }
+}
