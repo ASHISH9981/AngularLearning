@@ -8,7 +8,7 @@ import { ChildComponent } from '../child/child.component';
   template: `
     <div class="card">
       <h2>Parent Component</h2>
-      <p>Message for child (via @Input):</p>
+      <p>Message for child (via &#64;Input):</p>
       <input [(ngModel)]="messageForChild" />
       <button (click)="sendToChild()">Send to child</button>
 
@@ -16,7 +16,7 @@ import { ChildComponent } from '../child/child.component';
       <app-child [incoming]="childMessage" (notify)="onNotify($event)" #childComp></app-child>
 
       <p>Last event from child: {{ lastFromChild }}</p>
-      <button (click)="callChildMethod()">Call child method via @ViewChild</button>
+      <button (click)="callChildMethod()">Call child method via &#64;ViewChild</button>
     </div>
   `,
   standalone: true,
