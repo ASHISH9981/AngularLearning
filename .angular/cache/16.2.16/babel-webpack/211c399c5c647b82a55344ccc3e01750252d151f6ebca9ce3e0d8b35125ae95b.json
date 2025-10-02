@@ -1,0 +1,1 @@
+{"ast":null,"code":"/**\n * This file can include polyfills needed by Angular. Kept minimal for the example.\n */\nimport 'zone.js';","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}
